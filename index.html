@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 13 - CSS Transitions</title>
+  <style>
+    /* 設定兩個方塊的共同樣式 */
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+      margin-bottom: 20px;
+      font-size: 20px;
+      /* 設定過渡動畫效果，讓變化過程平滑（2秒完成） */
+      transition: width 2s, height 2s;
+    }
+
+    /* 方塊 1：滑鼠移上去時變長（增加寬度） */
+    .box1:hover {
+      width: 500px;
+    }
+
+    /* 方塊 2：滑鼠移上去時變大（同時增加寬度與高度） */
+    .box2:hover {
+      width: 150px;
+      height: 150px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box box1">1</div>
+  <div class="box box2">2</div>
+
+</body>
+</html>
